@@ -4,7 +4,7 @@ class Blog(models.Model):
     title = models.CharField(max_length=20)
     content = models.TextField()
     writer = models.CharField(max_length=20)
-    age = models.CharField(max_length=2)
+    age = models.CharField(max_length=2, default=0)
     createdAt = models.DateTimeField(auto_now_add=True)
     
 
